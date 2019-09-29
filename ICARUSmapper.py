@@ -7,7 +7,8 @@ from cartopy.io.shapereader import Reader
 from cartopy.feature import ShapelyFeature
 from matplotlib.image import imread
 import numpy as np
-from osgeo import gdal
+import matplotlib as mpl
+
 
 thresh = [0.9, 0.87, 0.85, 0.83, 0.8, 0.7, 0.6, 0.5]
 issLog = 'input_data/iss_log/ISS_info.txt'
@@ -447,7 +448,7 @@ def barebonesHarvests(proj, delimiter=', ', issLog=None):
     print("done\n")
     plt.show()
 
-def mapDensityFromImage():
+def mapHarvestDensityFromImage():
     # set up map, aspect ratio is 2:1
     fig_height = 20
     fig = plt.figure(figsize=(fig_height, fig_height / 2))
@@ -478,22 +479,23 @@ def mapDensityFromImage():
     npimg = np.where(npimg<0.00001,np.nan,npimg)
 
 
+
     print(npimg.shape)
 
-    #plot the map
-    map = plt.imshow(npimg[:,:,0], origin='upper', extent=[-180, 180, -86, 86], alpha=1, cmap=cm.plasma_r, transform=proj, vmax=30)
+    #plot the map, normalize the colors with a log scale
+    map = plt.imshow(npimg[:,:,0], origin='upper', extent=[-180, 180, -86, 86], alpha=1, norm=mpl.colors.LogNorm(), cmap=cm.plasma_r, transform=proj)
 
 
 
     # add colorbar and legend
-    bar = plt.colorbar(map, shrink=0.75, pad=0.03)
+    bar = plt.colorbar(map, shrink=0.75, pad=0.03, ticks=[1,2,5,10,20,50,100,150,200], format='%.f')
 
     #get rid of weird white lines in colorbar
     bar.set_alpha(1)
     bar.draw_all()
 
     #label the colorbar
-    bar.set_label("Count Per Square Kilometer", labelpad=20, fontsize=12)
+    bar.set_label("Count per Square Kilometer (Log)", labelpad=20, fontsize=12)
 
 
 
@@ -516,4 +518,4 @@ def mapDensityFromImage():
     print("Harvests mapped\n")
     # plt.show()
 
-mapDensityFromImage()
+mapHarvestDensityFromImage()
