@@ -488,7 +488,9 @@ def mapHarvestDensityFromImage():
 
 
     # add colorbar and legend
-    bar = plt.colorbar(map, shrink=0.75, pad=0.03, ticks=[1,2,5,10,20,50,100,150,200], format='%.f')
+    bar = plt.colorbar(map, shrink=0.75, pad=0.03, ticks=[2,5,10,20,50,100,150,200], format='%.f', drawedges=False)
+    bar.ax.tick_params(size=10)
+
 
     #get rid of weird white lines in colorbar
     bar.set_alpha(1)
