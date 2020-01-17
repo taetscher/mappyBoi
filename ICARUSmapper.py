@@ -520,4 +520,3 @@ def mapHarvestDensityFromImage():
     print("Harvests mapped\n")
     # plt.show()
 
-mapHarvestDensityFromImage()

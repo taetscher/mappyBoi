@@ -10,19 +10,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ICARUSmapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8211">
-              <caret line="492" selection-start-line="492" selection-end-line="492" />
+            <state relative-caret-position="770">
+              <caret line="522" selection-start-line="522" selection-end-line="522" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#489#840#0" />
+                <element signature="e#1683#2434#0" />
+                <element signature="e#3081#6772#0" />
+                <element signature="e#6845#10851#0" />
+                <element signature="e#10929#15964#0" />
+                <element signature="e#16028#18071#0" />
+                <element signature="e#18111#20245#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Saved_Maps/map_harvests_density.png">
           <provider selected="true" editor-type-id="images" />
         </entry>
@@ -74,6 +81,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -95,18 +103,30 @@
             <path>
               <item name="mappyBoi" type="b2602c69:ProjectViewProjectNode" />
               <item name="mappyBoi" type="462c0819:PsiDirectoryNode" />
+              <item name="input_data" type="462c0819:PsiDirectoryNode" />
+              <item name="GIS_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mappyBoi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mappyBoi" type="462c0819:PsiDirectoryNode" />
+              <item name="input_data" type="462c0819:PsiDirectoryNode" />
+              <item name="GIS_data" type="462c0819:PsiDirectoryNode" />
+              <item name="GHSL" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mappyBoi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mappyBoi" type="462c0819:PsiDirectoryNode" />
               <item name="Saved_Maps" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ICARUS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -251,8 +271,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17492098" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26817703" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -343,7 +364,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input_data/harvests/georefMediaTweets2019-07-03.txt" />
     <entry file="file://C:/Anaconda/envs/mappyBoi/Lib/site-packages/matplotlib/colorbar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
@@ -392,18 +412,12 @@
     <entry file="file://$PROJECT_DIR$/Saved_Maps/map_ICARUS_Tokyo_thresh70.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/input_data/GIS_data/tokyo_roads/a-readme-first.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="6" selection-start-column="47" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/input_data/GIS_data/tokyo_roads/a-readme-first.txt" />
     <entry file="file://$PROJECT_DIR$/input_data/icarus_output/output.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor" />
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-18033" />
       </provider>
+      <provider selected="true" editor-type-id="LargeFileEditor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Saved_Maps/map_ICARUS_DT_Tokyo_thresh90.png" />
     <entry file="file://$PROJECT_DIR$/Saved_Maps/map_ICARUS_DT_Tokyo_thresh85.png" />
@@ -456,18 +470,31 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Saved_Maps/map_harvests_4Months.png" />
-    <entry file="file://$PROJECT_DIR$/ICARUSmapper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8211">
-          <caret line="492" selection-start-line="492" selection-end-line="492" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/input_data/harvests/georefMediaTweets2019-07-03.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Saved_Maps/map_harvests_maySeptember.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Saved_Maps/map_harvests_density.png">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ICARUSmapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="770">
+          <caret line="522" selection-start-line="522" selection-end-line="522" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#489#840#0" />
+            <element signature="e#1683#2434#0" />
+            <element signature="e#3081#6772#0" />
+            <element signature="e#6845#10851#0" />
+            <element signature="e#10929#15964#0" />
+            <element signature="e#16028#18071#0" />
+            <element signature="e#18111#20245#0" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
